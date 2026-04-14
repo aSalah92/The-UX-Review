@@ -247,6 +247,10 @@ article{
                             width: 100%;
                             border: 2px solid black;
                         }
+                        .small-box{
+                            text-transform: uppercase;
+                            font-size: 14px;
+                        }
                     }
                     .text-box{
                         display: flex;
@@ -521,6 +525,181 @@ article{
                             cursor: pointer;
                             box-shadow: 5px 5px black;
                         }
+                    }
+                }
+            }
+        }
+    }
+    .authors-part{
+        background-color: rgb(255, 210, 48);
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .background-elements{
+            div:first-child{
+                background-color: red;
+                width: 150px;
+                height: 150px;
+                position: absolute;
+                bottom: 40px;
+                left: 40px;
+                transform: rotate(-7deg);
+                opacity: 0.1;
+            }
+            div:last-child{
+                background-color: black;
+                width: 160px;
+                height: 160px;
+                position: absolute;
+                top: 50px;
+                right: 50px;
+                transform: rotate(45deg);
+                opacity: 0.1;
+            }
+        }
+        .authors-container{
+            width: 65%;
+            min-width: 1200px;
+            height: 100%;
+            padding: 80px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            .title-box{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                h1{
+                    font-size: 40px;
+                    font-weight: 900;
+                }
+                p{
+                    font-size: 20px;
+                    word-spacing: 2px;
+                }
+            }
+            .dividing-line{
+                height: 8px;
+                width: 150px;
+                background-color: black;
+            }
+            .authors-boxes{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 50px;
+                .author-box{
+                    width: 32%;
+                    background-color: blanchedalmond;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 25px;
+                    padding: 25px 45px;
+                    border: 3px black solid;
+                    box-shadow: 5px 5px black;
+                    position: relative;
+                    transition: 0.25s;
+                    .small-box{
+                        color: aliceblue;
+                        text-transform: uppercase;
+                        padding: 6px;
+                        font-size: 12px;
+                        font-weight: 700;
+                        border: 2px black solid;
+                        position: absolute;right: 25px; top: 20px;
+                    }
+                    .image{
+                        width: 40%;
+                        border: 3px solid black;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .name{
+                        font-size: 25px;
+                        font-weight: 900;
+                    }
+                    .job{
+                        font-weight: 700;
+                    }
+                    .job-paragraph{
+                        text-align: center;
+                        word-spacing: 2px;
+                        line-height: 1.6;
+                    }
+                    .social-links{
+                        display: flex;
+                        column-gap: 20px;
+                        div{
+                            background-color: black;
+                            padding: 6px 10px;
+                            svg{
+                                width: 20px;
+                                fill: aliceblue;
+                            }
+                            &:hover{
+                                transform: translate(-3px,-3px);
+                                box-shadow: 4px 4px black;
+                                cursor: pointer;
+
+                            }
+                        }
+                        div:first-child:hover{
+                            background-color: rgb(29, 161, 242);
+                            border: 1px solid black;
+                        }
+                        div:nth-child(2):hover{
+                            background-color: rgb(21, 93, 252);
+                            border: 1px solid black;
+                        }
+                        div:last-child:hover{
+                            background-color: rgb(230, 0, 118);
+                            border: 1px solid black;
+                        }
+                    }
+                    &:hover{
+                        transform: translate(-3px,-3px);
+                        box-shadow: 8px 8px black;
+                    }
+                }
+                .author-box:first-child{
+                    background-color: rgb(254, 249, 194);
+                    .small-box{
+                        background-color: red;
+                        transform: rotate(7deg);
+                    }
+                    &:hover .name{
+                        color: red;
+                    }
+                }
+                .author-box:nth-child(2){
+                    background-color: rgb(219, 252, 231);
+                    .small-box{
+                        background-color: blue;
+                        transform: rotate(-6deg);
+                    }
+                    &:hover .name{
+                        color: blue;
+                    }
+                }
+                .author-box:nth-child(3){
+                    background-color: rgb(252, 231, 243);
+                    .small-box{
+                        background-color: blueviolet;
+                        transform: rotate(25deg);
+                        position: absolute; top: 30px;
+                    }
+                    &:hover .name{
+                        color: blueviolet;
                     }
                 }
             }
